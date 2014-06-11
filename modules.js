@@ -12,5 +12,5 @@ var modules =
     [ "Root-mean square calculations", "group__rms.html", "group__rms" ],
     [ "Format conversions", "group__format.html", "group__format" ],
     [ "Save VMD state", "group__save.html", "group__save" ],
-    [ "Matrix and list manipulation", "group__list.html", "group__list" ]
+    [ "List and matrix operations", "group__list.html", "group__list" ]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['renumber_20residues',['Renumber residues',['../group__ren.html',1,'']]],
   ['renumber',['renumber',['../group__ren.html#gabe19d6b1fa97f15399f5a3d0192ad08f',1,'VMDextensions.tcl']]],
   ['renumber_5ffrom_5f1',['renumber_from_1',['../group__ren.html#gab9294468034be487e492ff95bb7d04b6',1,'VMDextensions.tcl']]],
