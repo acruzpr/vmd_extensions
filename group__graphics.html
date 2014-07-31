@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>VMD Extension Functions: Structural manipulation</title>
+<title>VMD Extension Functions: Miscellaneous graphics operations</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__manip.html','');});
+$(document).ready(function(){initNavTree('group__graphics.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -99,30 +99,28 @@ $(document).ready(function(){initNavTree('group__manip.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Structural manipulation</div>  </div>
+<div class="title">Miscellaneous graphics operations</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1f228a6561955d2b7fcea95c2b9145b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__manip.html#ga1f228a6561955d2b7fcea95c2b9145b6">addCaps</a> sel?cap?</td></tr>
-<tr class="separator:ga1f228a6561955d2b7fcea95c2b9145b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf7f8173bbc2c891978737b871fcb135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__manip.html#gabf7f8173bbc2c891978737b871fcb135">addCaps2</a> sel?cap?</td></tr>
-<tr class="separator:gabf7f8173bbc2c891978737b871fcb135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab57fc307090b583880cf2dd596e1c160"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__manip.html#gab57fc307090b583880cf2dd596e1c160">swap</a> s1 s2</td></tr>
-<tr class="separator:gab57fc307090b583880cf2dd596e1c160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2a0251984e63717684b589b30c0d074"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#gaf2a0251984e63717684b589b30c0d074">labelAtoms</a> txt?sel?</td></tr>
+<tr class="separator:gaf2a0251984e63717684b589b30c0d074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga1f228a6561955d2b7fcea95c2b9145b6"></a>
+<p><a class="el" href="group__graphics.html#gaf2a0251984e63717684b589b30c0d074">labelAtoms</a> shows labels with a chosen format on all atoms matched by the given selection (string or atomselection object, default: "all"). Existing labels are deleted. For example:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<a class="code" href="group__graphics.html#gaf2a0251984e63717684b589b30c0d074" title="labelAtoms">labelAtoms</a> {%t} {element C}</div>
+</div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gaf2a0251984e63717684b589b30c0d074"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">addCaps </td>
+          <td class="memname">labelAtoms </td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">sel ?cap? &#160;</td>
+          <td class="paramname">txt ?sel? &#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -131,49 +129,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mutate first and last residue of a selection so that tleap will turn them into ACE and NME caps. "cap" may be "ACE", "NME", or "both" (default). </p>
-
-</div>
-</div>
-<a class="anchor" id="gabf7f8173bbc2c891978737b871fcb135"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">addCaps2 </td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">sel ?cap? &#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Stronger version of <a class="el" href="group__manip.html#ga1f228a6561955d2b7fcea95c2b9145b6">addCaps</a> - replaces whatever first and last atoms </p>
-
-</div>
-</div>
-<a class="anchor" id="gab57fc307090b583880cf2dd596e1c160"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">swap </td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s1 s2 &#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Exchange the positions of two atomselections (based on their centers) </p>
 
 </div>
 </div>

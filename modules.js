@@ -11,6 +11,7 @@ var modules =
     [ "Structural manipulation", "group__manip.html", "group__manip" ],
     [ "Root-mean square calculations", "group__rms.html", "group__rms" ],
     [ "Format conversions", "group__format.html", "group__format" ],
+    [ "Miscellaneous graphics operations", "group__graphics.html", "group__graphics" ],
     [ "Save VMD state", "group__save.html", "group__save" ],
     [ "List and matrix operations", "group__list.html", "group__list" ]
 ];

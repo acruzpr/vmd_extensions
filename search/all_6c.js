@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['labelatoms',['labelAtoms',['../group__graphics.html#gaf2a0251984e63717684b589b30c0d074',1,'VMDextensions.tcl']]],
   ['load_20multiple_20files',['Load multiple files',['../group__lf.html',1,'']]],
   ['license',['License',['../license.html',1,'']]],
   ['list_20and_20matrix_20operations',['List and matrix operations',['../group__list.html',1,'']]],

@@ -23,6 +23,7 @@ var VMDextensions_8tcl =
     [ "helicity_3", "VMDextensions_8tcl.html#ga9bcc7c6162cebee128092fadf487725f", null ],
     [ "identifyFrame", "VMDextensions_8tcl.html#gab10ee7debbc380e5c54467dce04c711f", null ],
     [ "init", "VMDextensions_8tcl.html#adbfbe2c3567919bd543c34783a6bebe4", null ],
+    [ "labelAtoms", "VMDextensions_8tcl.html#gaf2a0251984e63717684b589b30c0d074", null ],
     [ "loadFrameGroups", "VMDextensions_8tcl.html#a77383aa7fc5d3f6d5f2de40e98825d6b", null ],
     [ "loadFrames", "VMDextensions_8tcl.html#gaca22291646e291bcab7ea41ba46f482b", null ],
     [ "lseq", "VMDextensions_8tcl.html#gad46e853418301fe6e0a74ee65eb9e260", null ],
