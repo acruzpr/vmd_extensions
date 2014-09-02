@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('group__format.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga2a100347c47df06d0dd89157c3bd7246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__format.html#ga2a100347c47df06d0dd89157c3bd7246">setBondsFromTpr</a> fn</td></tr>
+<tr class="separator:ga2a100347c47df06d0dd89157c3bd7246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b2dcf9ed65cd4602e3d8e72c0ed89cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__format.html#ga7b2dcf9ed65cd4602e3d8e72c0ed89cd">writePQR</a> sel filename</td></tr>
 <tr class="separator:ga7b2dcf9ed65cd4602e3d8e72c0ed89cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0958a51970c77683d531ece85160496f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__format.html#ga0958a51970c77683d531ece85160496f">writePlumed</a> sel filename</td></tr>
@@ -138,6 +140,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the 1-letter sequence of a selection (looking at CA only) </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2a100347c47df06d0dd89157c3bd7246"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setBondsFromTpr </td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fn &#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read bonds connectivities stored in a GROMACS's .tpr file and apply it to the current molecule. Unfortunately solvent bonds do not seem to show up (e.g tip3). The current connectivity is discarded. Requires "gmxdump" (of a sufficiently new version for your topology). Tested with gromacs-5.0. Not that different wrt. <a href="http://md.chem.rug.nl/cgmartini/index.php/rb">http://md.chem.rug.nl/cgmartini/index.php/rb</a> </p>
 
 </div>
 </div>

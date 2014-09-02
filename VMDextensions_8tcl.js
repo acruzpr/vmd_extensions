@@ -48,6 +48,7 @@ var VMDextensions_8tcl =
     [ "rmsfTrajectory", "VMDextensions_8tcl.html#gab27e75d1af6366c5557da5604a3a7ab4", null ],
     [ "rmsfTrajectoryColor", "VMDextensions_8tcl.html#ga2e9c7860e3ae985bd89823010ec43c49", null ],
     [ "saveFullState", "VMDextensions_8tcl.html#gab2601ed4c7d2a0e130dcf11f1f0bb82e", null ],
+    [ "setBondsFromTpr", "VMDextensions_8tcl.html#ga2a100347c47df06d0dd89157c3bd7246", null ],
     [ "swap", "VMDextensions_8tcl.html#gab57fc307090b583880cf2dd596e1c160", null ],
     [ "transinertia", "VMDextensions_8tcl.html#ga48d531fe902f658359de6fb3d3227b06", null ],
     [ "transpose", "VMDextensions_8tcl.html#gad7d78e2f78aa2940def1640030104bd8", null ],
