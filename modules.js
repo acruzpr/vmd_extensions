@@ -13,5 +13,6 @@ var modules =
     [ "Format conversions", "group__format.html", "group__format" ],
     [ "Miscellaneous graphics operations", "group__graphics.html", "group__graphics" ],
     [ "Save VMD state", "group__save.html", "group__save" ],
-    [ "List and matrix operations", "group__list.html", "group__list" ]
+    [ "List and matrix operations", "group__list.html", "group__list" ],
+    [ "Auto-cleanup atomselections", "group__asel__group.html", "group__asel__group" ]
 ];

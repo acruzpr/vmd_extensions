@@ -144,7 +144,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute rmsd of all frames of sel wrt currently selected frame in ref. Per each frame, align ref1 to ref2, and measure RMSD of sel1 wrt sel2. sel1 and ref1 should belong to the same molecule (the trajectory under study, multiple frames). Sel2 and ref2 should belong to the same molecule (the reference frame). Return a list of RMSD values (one per frame in sel). If sel2 is the string ROTATE, rmsd is not computed, but sel1 is rotated instead. </p>
+<p>Compute RMSD, over all frames, of a selection of atoms <em>sel1</em> with respect to another <em>sel2</em> after aligning the set of atoms <em>ref1</em> to <em>ref2</em>. In ther words, for per each frame, align <em>ref1</em> to <em>ref2</em>, and measure RMSD of <em>sel1</em> with respect to <em>sel2</em>. <em>sel1</em> and <em>ref1</em> should belong to the same molecule (the trajectory under study, multiple frames). <em>Sel2</em> and <em>ref2</em> should belong to the same molecule (the reference frame). Return a list of RMSD values (one per frame in <em>sel</em>). If <em>sel2</em> is the string <code>ROTATE</code>, RMSD is not computed, but <em>sel1</em> is rotated instead. </p>
 
 </div>
 </div>
@@ -165,7 +165,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute average rmsf by sliding windows of width win. RMSF will be averaged by weight. </p>
+<p>Compute average rmsf by sliding windows of width win. RMSF will be averaged by weight. See details in <a class="el" href="group__rms.html#ga2e9c7860e3ae985bd89823010ec43c49">rmsfTrajectoryColor</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sel</td><td>atom selection </td></tr>
+    <tr><td class="paramname">win</td><td>window size (frames) </td></tr>
+    <tr><td class="paramname">step</td><td>stride </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -186,7 +194,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute average rmsf by sliding windows of width win. RMSF will be averaged by weight. Assign it to the "user" attribute at each frame. </p>
+<p>Compute average rmsf by sliding windows of width win. RMSF will be averaged by weight. Assign it to the "user" attribute at each frame, which will hold the RMSF computed over the next <em>win</em> frames. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sel</td><td>atom selection </td></tr>
+    <tr><td class="paramname">win</td><td>window size (frames) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

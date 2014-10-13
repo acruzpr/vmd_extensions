@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>VMD Extension Functions: Load multiple files</title>
+<title>VMD Extension Functions: Auto-cleanup atomselections</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__lf.html','');});
+$(document).ready(function(){initNavTree('group__asel__group.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -99,30 +99,34 @@ $(document).ready(function(){initNavTree('group__lf.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Load multiple files</div>  </div>
+<div class="title">Auto-cleanup atomselections</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaca22291646e291bcab7ea41ba46f482b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lf.html#gaca22291646e291bcab7ea41ba46f482b">loadFrames</a> pattern</td></tr>
-<tr class="separator:gaca22291646e291bcab7ea41ba46f482b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e19f8e32306decb7fe2c2e69ea56e95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lf.html#ga6e19f8e32306decb7fe2c2e69ea56e95">appendFrames</a> pattern</td></tr>
-<tr class="separator:ga6e19f8e32306decb7fe2c2e69ea56e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab10ee7debbc380e5c54467dce04c711f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lf.html#gab10ee7debbc380e5c54467dce04c711f">identifyFrame</a></td></tr>
-<tr class="separator:gab10ee7debbc380e5c54467dce04c711f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga520aed4f631647db50a792e7d5d0eced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__asel__group.html#ga520aed4f631647db50a792e7d5d0eced">asel</a> args</td></tr>
+<tr class="separator:ga520aed4f631647db50a792e7d5d0eced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4175d63486b21157dae6ecbabd2610a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__asel__group.html#gaf4175d63486b21157dae6ecbabd2610a">ssel</a> str</td></tr>
+<tr class="separator:gaf4175d63486b21157dae6ecbabd2610a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab742c21d6cf81d886fd9a7281201b1a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__asel__group.html#gab742c21d6cf81d886fd9a7281201b1a0">asel_free</a></td></tr>
+<tr class="separator:gab742c21d6cf81d886fd9a7281201b1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The <a class="el" href="group__asel__group.html#ga520aed4f631647db50a792e7d5d0eced">asel</a> and <a class="el" href="group__asel__group.html#gab742c21d6cf81d886fd9a7281201b1a0">asel_free</a> functions provide a replacement for VMD's <code>atomselect</code> which behave like VMD's usual atomselect, but keeps a list of selections created in the scope of the calling function (it is called <code>_asel_list</code>, but you should not need it). Such atomselections can be deleted all at once when the function is exited via the <a class="el" href="group__asel__group.html#gab742c21d6cf81d886fd9a7281201b1a0">asel_free</a> function.</p>
+<dl class="section warning"><dt>Warning</dt><dd>these functions are experimental and unnecessary for most people, because the behavior of recent VMD versions is to clean up atomselections created in a <code>proc</code> anyway (unless they are declared <code>global</code>).</dd></dl>
+<p>In short, just use <a class="el" href="group__asel__group.html#ga520aed4f631647db50a792e7d5d0eced">asel</a> instead of <code>atomselect</code>, and call <a class="el" href="group__asel__group.html#gab742c21d6cf81d886fd9a7281201b1a0">asel_free</a> at the end of your function.</p>
+<p>The <a class="el" href="group__asel__group.html#gaf4175d63486b21157dae6ecbabd2610a">ssel</a> function allows one to write function which accept either selection strings or existing atomselections. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga6e19f8e32306decb7fe2c2e69ea56e95"></a>
+<a class="anchor" id="ga520aed4f631647db50a792e7d5d0eced"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">appendFrames </td>
+          <td class="memname">asel </td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">pattern &#160;</td>
+          <td class="paramname">args &#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -131,32 +135,32 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Usage: loadFrames 53-*.coor Will load all files starting with 53 (coordinates, dcd, whatever) in natural sort, e.g. <code>44-bla-2-100.coor</code> &lt; <code>44-bla11-100.coor</code>. Error handling is tricky. The /tmp/appendFrames.[pid].log will be true in any case. The ... .ff file will contain infos on the last successfully loaded frame for each trajectory. Frames are 0-based. </p>
+<p>Auto-cleanup version of <code>atomselect</code>. </p>
 
 </div>
 </div>
-<a class="anchor" id="gab10ee7debbc380e5c54467dce04c711f"></a>
+<a class="anchor" id="gab742c21d6cf81d886fd9a7281201b1a0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">identifyFrame </td>
+          <td class="memname">asel_free </td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Identify current Frame </p>
+<p>Cleanup the atom-selections performed by <a class="el" href="group__asel__group.html#ga520aed4f631647db50a792e7d5d0eced">asel</a> and <a class="el" href="group__asel__group.html#gaf4175d63486b21157dae6ecbabd2610a">ssel</a> in the current function. </p>
 
 </div>
 </div>
-<a class="anchor" id="gaca22291646e291bcab7ea41ba46f482b"></a>
+<a class="anchor" id="gaf4175d63486b21157dae6ecbabd2610a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">loadFrames </td>
+          <td class="memname">ssel </td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">pattern &#160;</td>
+          <td class="paramname">str &#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -165,7 +169,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Usage: loadFrames 53-*.coor Will load all files starting with 53 (coordinates, dcd, whatever) in natural sort e.g. 44-bla-2-100.coor &lt; 44-bla11-100.coor </p>
+<p>Auto-cleanup version of <code>atomselect</code>. If <code>str</code> is an atomselection, just return it as it is. Otherwise, make a selection of it with the top molecule, record it like <a class="el" href="group__asel__group.html#ga520aed4f631647db50a792e7d5d0eced">asel</a>, and return it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>An atom selection string or an existing atomselection </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
