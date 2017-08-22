@@ -1,6 +1,7 @@
 var group__format =
 [
     [ "getFasta", "group__format.html#gadbd1726494212571a67d19b90ef4d9d1", null ],
+    [ "readXYZUser", "group__format.html#ga395fefcc91e72665244dd84b29d769ae", null ],
     [ "setBondsFromTpr", "group__format.html#ga2a100347c47df06d0dd89157c3bd7246", null ],
     [ "writeNullVelFile", "group__format.html#ga5515324a8d7c78234cbc8b7af72ad0ce", null ],
     [ "writePDBTER", "group__format.html#gadc894966e5f6007fa209337eea1bbe3b", null ],
